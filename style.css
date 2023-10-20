@@ -105,7 +105,7 @@ header {
 }
 
 .info img {
-    max-height: 600px;
+    max-width: 80%;
     width: fit-content;
 }
 
@@ -131,7 +131,7 @@ header {
     color: #ffd98c;
 }
 
-.content img {
+.content img, .r2 img {
     height: fit-content;
     max-width: 50%;
 }
@@ -252,11 +252,11 @@ header {
         padding: 3px 10px;
     }
 
-    .info h3  {
+    .info h3 {
         font-size: 30pt;
     }
 
-    .info h4 {
+    .info h4, .r2 h3  {
         font-size: 20pt;
     }
 
@@ -275,6 +275,10 @@ header {
         padding: 5% 75px 10% 0;
     }
 
+    .footer {  
+        padding: 5% 75px 2% 75px;
+    }
+
     .footer h6, .om, .kontakt {
         font-size: 15pt;
     }
@@ -287,16 +291,20 @@ header {
 }
 
 @media (max-width: 767px) {
+    #pen {
+        display: none;
+    }
+    
     .menu a {
         font-size: 10pt;
         padding: 1px 5px;
     }
     
     .info h3 {
-        font-size: 25pt;
+        font-size: 20pt;
     }
     
-    .info h4 {
+    .info h4, .r2 h3 {
         font-size: 15pt;
     }
     
@@ -313,6 +321,11 @@ header {
         height: fit-content;
         max-width: 50px;
         padding: 5% 50px 10% 0;
+    }
+
+    .footer { 
+        font-size: 10pt; 
+        padding: 5% 50px 2% 50px;
     }
 
     .footer h6, .om, .kontakt {
